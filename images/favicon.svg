@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 -80 160 160" width="512" height="512"><g fill="none" stroke="#7A2840" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-60,-32 V-48 Q-60,-60 -48,-60 H-32"/>
+<path d="M32,-60 H48 Q60,-60 60,-48 V-32"/>
+<path d="M60,32 V48 Q60,60 48,60 H32"/>
+<path d="M-32,60 H-48 Q-60,60 -60,48 V32"/>
+</g>
+<line x1="17" y1="17" x2="41" y2="41" stroke="#7A2840" stroke-width="11" stroke-linecap="round"/>
+<circle cx="-5" cy="-5" r="29" fill="#FFF4F7" stroke="#7A2840" stroke-width="8"/>
+<g transform="translate(-5,-5)">
+<g fill="#F6B3C5" stroke="#E07F9B" stroke-width="0.8" stroke-linejoin="round">
+<path transform="rotate(0)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
+<path transform="rotate(72)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
+<path transform="rotate(144)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
+<path transform="rotate(216)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
+<path transform="rotate(288)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
+</g>
+<g stroke="#B5476A" stroke-width="1" stroke-linecap="round">
+<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(36)"/>
+<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(108)"/>
+<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(180)"/>
+<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(252)"/>
+<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(324)"/>
+</g>
+<g fill="#B5476A">
+<circle cx="0" cy="-9" r="1.4" transform="rotate(36)"/>
+<circle cx="0" cy="-9" r="1.4" transform="rotate(108)"/>
+<circle cx="0" cy="-9" r="1.4" transform="rotate(180)"/>
+<circle cx="0" cy="-9" r="1.4" transform="rotate(252)"/>
+<circle cx="0" cy="-9" r="1.4" transform="rotate(324)"/>
+</g>
+<circle r="3.6" fill="#F2C14E"/>
+</g></svg>
