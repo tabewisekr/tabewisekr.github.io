@@ -35,6 +35,10 @@ jobs:
         with:
           path: .
 
+      # The artifact can take a few seconds to become visible to the deploy step.
+      - name: Wait for artifact
+        run: sleep 20
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
