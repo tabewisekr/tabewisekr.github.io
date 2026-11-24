@@ -1,4 +1,4 @@
-/* TabeWise site script: language switch (English default, Korean alternate; Sky default theme), mobile menu, contact link. */
+/* TabeWise site script: language switch (Korean default, English alternate; Sky default theme), mobile menu, contact link. */
 (function () {
   'use strict';
 
@@ -48,18 +48,18 @@
     var m = META[l];
     root.lang = l;
 
-    /* English is the text in the page; Korean is kept in data-ko / data-alt-ko / data-aria-ko. */
-    doc.querySelectorAll('[data-ko]').forEach(function (e) {
-      if (e.dataset.en === undefined) e.dataset.en = e.innerHTML;
-      e.innerHTML = l === 'ko' ? e.dataset.ko : e.dataset.en;
+    /* Korean is the text in the page; English is kept in data-en / data-alt-en / data-aria-en. */
+    doc.querySelectorAll('[data-en]').forEach(function (e) {
+      if (e.dataset.ko === undefined) e.dataset.ko = e.innerHTML;
+      e.innerHTML = l === 'en' ? e.dataset.en : e.dataset.ko;
     });
-    doc.querySelectorAll('[data-alt-ko]').forEach(function (e) {
-      if (e.dataset.altEn === undefined) e.dataset.altEn = e.getAttribute('alt');
-      e.setAttribute('alt', l === 'ko' ? e.dataset.altKo : e.dataset.altEn);
+    doc.querySelectorAll('[data-alt-en]').forEach(function (e) {
+      if (e.dataset.altKo === undefined) e.dataset.altKo = e.getAttribute('alt');
+      e.setAttribute('alt', l === 'en' ? e.dataset.altEn : e.dataset.altKo);
     });
-    doc.querySelectorAll('[data-aria-ko]').forEach(function (e) {
-      if (e.dataset.ariaEn === undefined) e.dataset.ariaEn = e.getAttribute('aria-label');
-      e.setAttribute('aria-label', l === 'ko' ? e.dataset.ariaKo : e.dataset.ariaEn);
+    doc.querySelectorAll('[data-aria-en]').forEach(function (e) {
+      if (e.dataset.ariaKo === undefined) e.dataset.ariaKo = e.getAttribute('aria-label');
+      e.setAttribute('aria-label', l === 'en' ? e.dataset.ariaEn : e.dataset.ariaKo);
     });
 
     doc.title = m.title;
@@ -78,9 +78,9 @@
     if (typeof refreshShots === 'function') refreshShots();
   }
 
-  var saved = 'en';
-  try { saved = localStorage.getItem(KEY) || 'en'; } catch (e) { /* ignore */ }
-  setLang(saved === 'ko' ? 'ko' : 'en');
+  var saved = 'ko';
+  try { saved = localStorage.getItem(KEY) || 'ko'; } catch (e) { /* ignore */ }
+  setLang(saved === 'en' ? 'en' : 'ko');
 
   doc.querySelectorAll('.lang button').forEach(function (b) {
     b.addEventListener('click', function () { setLang(b.dataset.lang); });
