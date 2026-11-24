@@ -53,6 +53,10 @@
       if (e.dataset.ko === undefined) e.dataset.ko = e.innerHTML;
       e.innerHTML = l === 'en' ? e.dataset.en : e.dataset.ko;
     });
+    doc.querySelectorAll('[data-href-en]').forEach(function (e) {
+      if (e.dataset.hrefKo === undefined) e.dataset.hrefKo = e.getAttribute('href');
+      e.setAttribute('href', l === 'en' ? e.dataset.hrefEn : e.dataset.hrefKo);
+    });
     doc.querySelectorAll('[data-alt-en]').forEach(function (e) {
       if (e.dataset.altKo === undefined) e.dataset.altKo = e.getAttribute('alt');
       e.setAttribute('alt', l === 'en' ? e.dataset.altEn : e.dataset.altKo);
