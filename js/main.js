@@ -1,4 +1,4 @@
-/* TabeWise site script: language switch (Korean default, English alternate; Sky default theme), mobile menu, contact link. */
+/* TabeWise site script: language switch (Korean default, English alternate; Sakura (pink) default theme), mobile menu, contact link. */
 (function () {
   'use strict';
 
@@ -102,8 +102,8 @@
     settings: { en: 'Settings screen', ko: '설정 화면' }
   };
   var THEME_KEY = 'tabewise-theme';
-  var theme = 'sky'; /* default theme: Sky (second theme) */
-  /* Sky is fixed for this site: no theme picker, and any theme saved by another TabeWise page is ignored. */
+  var theme = 'sakura'; /* default theme: Sakura (first theme, pink) */
+  /* Sakura (pink) is fixed for this site: no theme picker, and any theme saved by another TabeWise page is ignored. */
 
   function refreshShots() {
     if (!SHOTS || !THEMES) return; /* not initialised yet on first setLang */
@@ -131,7 +131,7 @@
   }
 
   function applyTheme(name, save) {
-    if (!THEMES[name]) name = 'sky';
+    if (!THEMES[name]) name = 'sakura';
     theme = name;
     if (name === 'sakura') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', name);
     meta('meta[name="theme-color"]', 'content', THEMES[name].color);
