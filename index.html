@@ -4,81 +4,173 @@
 <meta charset="utf-8">
 <meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TabeWise (타베와이즈) | 현명하게 먹고, 더 잘 알기.</title>
-<meta name="description" content="TabeWise(타베와이즈) 한국 서비스는 대한민국을 위한 별도의 제품으로 준비 중입니다. 한국 식품 원재료 표시 스캔과 한국어·영어 지원을 계획하고 있습니다.">
-<meta name="theme-color" content="#ffe1ea">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<!-- CANONICAL URL (prepared, intentionally not active): add this line only after the final deployment URL is confirmed,
-     and keep og:url / og:image / twitter:image below in sync with it:
-     <link rel="canonical" href="https://CONFIRMED-FINAL-URL/"> -->
-<!-- og:url / og:image / twitter:image: add once this site's own URL exists (do not point at the Japanese/English site). -->
+<title>TabeWise 타베와이즈 | 한국 식품 성분 확인 앱 준비 중</title>
+<meta name="description" content="TabeWise(타베와이즈)는 한국 식품의 원재료 표시를 이해하도록 돕는, 한국 시장을 위한 앱을 준비하고 있습니다. 한국 식품 원재료 표시 스캔과 한국어·영어 지원을 계획하고 있으며, 아직 출시되지 않았습니다.">
+<meta name="theme-color" content="#fff2f7">
+<!-- Neutral temporary icon until the Korean brand assets are approved. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23a8135b'/%3E%3C/svg%3E">
+<link rel="canonical" href="https://tabewisekr.github.io/">
+<meta property="og:url" content="https://tabewisekr.github.io/">
+<!-- Share image still required: add og:image and twitter:image once approved. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TabeWise">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:title" content="TabeWise (타베와이즈) | 현명하게 먹고, 더 잘 알기.">
-<meta property="og:description" content="대한민국을 위한 TabeWise를 준비 중입니다. 한국 식품 원재료 표시 스캔을 계획하고 있습니다.">
+<meta property="og:title" content="TabeWise 타베와이즈 | 한국 식품 성분 확인 앱 준비 중">
+<meta property="og:description" content="한국 식품 성분, 더 잘 알고 선택하세요. 원재료 표시 스캔과 한국어·영어 지원을 계획 중인 앱을 준비하고 있습니다.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TabeWise (타베와이즈) | 현명하게 먹고, 더 잘 알기.">
-<meta name="twitter:description" content="대한민국을 위한 TabeWise를 준비 중입니다. 한국 식품 원재료 표시 스캔을 계획하고 있습니다.">
-<link rel="stylesheet" href="css/style.css?v=15">
+<meta name="twitter:title" content="TabeWise 타베와이즈 | 한국 식품 성분 확인 앱 준비 중">
+<meta name="twitter:description" content="한국 식품 성분, 더 잘 알고 선택하세요. 원재료 표시 스캔과 한국어·영어 지원을 계획 중인 앱을 준비하고 있습니다.">
+<link rel="stylesheet" href="css/home.css?v=11">
+<noscript><style>
+/* Without JavaScript the menu button and language switch cannot work: show the links instead. */
+.menu-btn,.lang{display:none}
+@media(max-width:960px){
+.nav{position:static}
+section{scroll-margin-top:0}
+.nav .wrap{height:auto;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.nav nav{display:block;position:static;flex-basis:100%;margin:0;padding:0;border:0;box-shadow:none;max-height:none;overflow:visible}
+.nav ul{flex-direction:row;flex-wrap:wrap}
+.nav ul a{padding:10px 12px}
+}
+</style></noscript>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="lens" viewBox="-80 -80 160 160"><g fill="none" stroke="#7A2840" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-<path d="M-60,-32 V-48 Q-60,-60 -48,-60 H-32"/>
-<path d="M32,-60 H48 Q60,-60 60,-48 V-32"/>
-<path d="M60,32 V48 Q60,60 48,60 H32"/>
-<path d="M-32,60 H-48 Q-60,60 -60,48 V32"/>
-</g>
-<line x1="17" y1="17" x2="41" y2="41" stroke="#7A2840" stroke-width="11" stroke-linecap="round"/>
-<circle cx="-5" cy="-5" r="29" fill="#FFF4F7" stroke="#7A2840" stroke-width="8"/>
-<g transform="translate(-5,-5)">
-<g fill="#F6B3C5" stroke="#E07F9B" stroke-width="0.8" stroke-linejoin="round">
-<path transform="rotate(0)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
-<path transform="rotate(72)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
-<path transform="rotate(144)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
-<path transform="rotate(216)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
-<path transform="rotate(288)" d="M0,0 C-8,-5 -10,-15 -5.5,-20 L0,-17.5 L5.5,-20 C10,-15 8,-5 0,0 Z"/>
-</g>
-<g stroke="#B5476A" stroke-width="1" stroke-linecap="round">
-<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(36)"/>
-<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(108)"/>
-<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(180)"/>
-<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(252)"/>
-<line x1="0" y1="0" x2="0" y2="-8.5" transform="rotate(324)"/>
-</g>
-<g fill="#B5476A">
-<circle cx="0" cy="-9" r="1.4" transform="rotate(36)"/>
-<circle cx="0" cy="-9" r="1.4" transform="rotate(108)"/>
-<circle cx="0" cy="-9" r="1.4" transform="rotate(180)"/>
-<circle cx="0" cy="-9" r="1.4" transform="rotate(252)"/>
-<circle cx="0" cy="-9" r="1.4" transform="rotate(324)"/>
-</g>
-<circle r="3.6" fill="#F2C14E"/>
-</g></symbol></defs></svg>
 <a class="skip" href="#main" data-en="Skip to content">본문으로 건너뛰기</a>
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="TabeWise 타베와이즈"><img src="images/tabewise-logo-animated.svg" width="166" height="52" alt="타베와이즈 TabeWise"></a>
-    <div class="lang" role="group" aria-label="언어"><button type="button" data-lang="ko" aria-pressed="true">한국어</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
-    <span class="btn btn-soft is-disabled nav-dl apk-soon" role="note" aria-disabled="true" aria-label="앱 준비 중" data-aria-en="App in Preparation" data-en="App in Preparation">앱 준비 중</span>
+    <a class="brand" href="#top" aria-label="TabeWise 타베와이즈"><span class="wordmark">타베와이즈 <span lang="en">TabeWise</span></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴" data-aria-en="Menu"><span></span><span></span></button>
+    <nav id="site-nav" aria-label="주요 메뉴" data-aria-en="Main"><ul><li><a href="#features" data-en="Planned features">예정 기능</a></li><li><a href="#how" data-en="How it works">이용 방법</a></li><li><a href="#preview" data-en="App screens">앱 화면</a></li><li><a href="#trust" data-en="Design principles">설계 원칙</a></li><li><a href="#faq" data-en="FAQ">FAQ</a></li></ul></nav>
+    <div class="lang" role="group" aria-label="언어" data-aria-en="Language"><button type="button" data-lang="ko" aria-pressed="true" lang="ko">한국어</button><button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button></div>
   </div>
 </header>
 
 <main id="main">
 
-<!-- Introduction (hero) -->
 <section class="hero" id="top">
   <div class="wrap">
-    <span class="eyebrow" data-en="A dedicated product for South Korea">대한민국 전용 서비스 · 준비 중</span>
-    <div class="emblem"><svg class="lens" aria-hidden="true" focusable="false"><use href="#lens"/></svg></div>
-    <p class="tagline"><b>타베와이즈</b> TabeWise</p>
-    <h1 data-en="Eat Smart. <em>Know Better.</em>">현명하게 먹고, <em>더 잘 알기.</em></h1>
-    <p class="lead" data-en="TabeWise for South Korea is being prepared as its own product. Scanning of Korean ingredient labels is planned, with Korean and English support. It is not released yet.">TabeWise(타베와이즈) 한국 서비스는 대한민국을 위한 별도의 제품으로 준비 중입니다. 한국 식품의 원재료 표시 스캔 기능을 계획하고 있으며, 한국어와 영어를 지원할 예정입니다. 아직 출시되지 않았습니다.</p>
-    <div class="cta">
-      <span class="btn btn-primary is-disabled" role="note" aria-disabled="true" data-en="App in Preparation">앱 준비 중</span>
+    <div class="hero-text">
+      <p class="status" data-en="App in Preparation">앱 준비 중</p>
+      <h1 data-en="Understand Korean food ingredients.<br><em>Choose better.</em>">한국 식품 성분,<br><em>더 잘 알고 선택하세요.</em></h1>
+      <p class="tagline" data-en="Eat Smart. Know Better.">현명하게 먹고, 더 잘 알기.</p>
+      <p class="lead" data-en="The TabeWise app for South Korea is being designed to read Korean ingredient labels with your camera and show which ingredients to check, and why.">한국 시장을 위한 TabeWise(타베와이즈) 앱은 한국 식품의 원재료 표시를 카메라로 읽고, 확인이 필요한 원재료와 그 이유를 보여 드리는 것을 목표로 합니다.</p>
+      <div class="cta"><a class="btn primary" href="#features" data-en="See planned features">예정 기능 보기</a><a class="btn ghost" href="#how" data-en="How it works">이용 방법</a></div>
+      <p class="note" data-en="The app is not released yet. Korean ingredient label scanning and Korean and English support are planned.">아직 출시되지 않은 앱입니다. 한국 식품 원재료 표시 스캔과 한국어·영어 지원은 계획 단계입니다.</p>
+    </div>
+    <div class="hero-art"><figure class="shot" data-shot="hero" data-image-ko="" data-image-en="">
+  <div class="phone"><div class="screen">
+    <div class="slot"><strong data-en="App Preview in Preparation">앱 화면 준비 중</strong></div>
+    <img class="shot-img" hidden width="1080" height="2400" alt="" data-alt-ko="홈 화면" data-alt-en="Home screen">
+  </div></div>
+</figure></div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <header class="shead"><p class="eyebrow" data-en="Planned features">예정 기능</p><h2 data-en="What you need to know while shopping">장보기에 필요한 정보를 한눈에</h2><p class="sub" data-en="These features are planned for the app for South Korea. They are not available yet and may change.">아래는 한국 시장을 위한 앱에 계획 중인 기능입니다. 아직 이용할 수 없으며, 내용은 달라질 수 있습니다.</p></header>
+    <div class="bento">
+      <article class="card wide tint"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M8 9h8M8 12h8M8 15h5"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Korean ingredient label scanning">한글 원재료 표시 스캔</h3><p data-en="Will read the text of a Korean ingredient label from a camera photo.">한국 식품의 원재료 표시를 카메라로 촬영하면 글자를 읽어 낼 수 있도록 준비합니다.</p></article>
+      <article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 6v12M7 6v12M11 6v12M13.5 6v12M17 6v12M20 6v12"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Barcode lookup">바코드 조회</h3><p data-en="Will find product information from a Korean product barcode.">한국 식품의 바코드를 스캔해 상품 정보를 찾을 수 있도록 준비합니다.</p></article>
+      <article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Ingredient analysis">원재료 분석</h3><p data-en="Will go through ingredients one by one and explain why any need checking.">원재료를 하나씩 살펴보고, 왜 확인이 필요한지 이유를 알려 드릴 예정입니다.</p></article>
+      <article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Nutrition information">영양 정보</h3><p data-en="Will present available nutrition values clearly, without estimating any.">확인 가능한 영양 정보를 보기 쉽게 정리해 보여 드리고, 값은 추정하지 않을 예정입니다.</p></article>
+      <article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 4 3 20h18L12 4zM12 10v4M12 17h.01"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Allergen information">알레르기 정보</h3><p data-en="Will show declared allergens. If you have an allergy, always read the package.">표시된 알레르기 유발 성분을 알려 드릴 예정입니다. 알레르기가 있다면 반드시 포장을 직접 확인하세요.</p></article>
+      <article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-12 13M5 19c2-5 5-7 9-9"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Halal, vegan and vegetarian screening">할랄 · 비건 · 베지테리언 확인</h3><p data-en="Will assess products against dietary needs using evidence. This is not certification.">식이 기준에 맞는지 근거를 바탕으로 살펴볼 수 있도록 준비합니다. 인증이 아닙니다.</p><a class="more" href="#halal" data-en="How Halal screening is planned">할랄 확인 방식 보기</a></article>
+      <article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Product catalogue">상품 카탈로그</h3><p data-en="A catalogue of product information for the South Korean market is planned.">한국 시장의 상품 정보를 찾아볼 수 있는 목록을 준비합니다.</p></article>
+      <article class="card wide"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="8.5"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Scan history and saved products">스캔 기록과 저장한 상품</h3><p data-en="Will let you revisit past scans and save products you care about.">이전에 스캔한 상품을 다시 보고, 관심 있는 상품을 저장할 수 있도록 준비합니다.</p></article>
+      <article class="card wide"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 15V4M8 8l4-4 4 4M6 12H5v8h14v-8h-1"/></svg></span><span class="badge" data-en="Planned">예정</span><h3 data-en="Share scan results">결과 공유</h3><p data-en="Sharing a scan result with family or friends is planned.">확인 결과를 가족이나 친구에게 공유하는 기능을 계획하고 있습니다.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="halal" class="soft">
+  <div class="wrap">
+    <header class="shead"><p class="eyebrow" data-en="Halal screening · Planned">할랄 확인 · 예정</p><h2 data-en="Screening planned around evidence">근거를 바탕으로 한 확인을 계획하고 있습니다</h2><p class="sub" data-en="Planned Halal screening is a reference feature that looks at ingredients and available evidence. The result states and wording below are proposals under review and may change.">한국 시장을 위한 앱에 계획 중인 할랄 확인은 원재료와 확인 가능한 근거를 살펴보는 참고 기능입니다. 아래 결과 구분과 용어는 검토 중인 안이며 달라질 수 있습니다.</p></header>
+    <ul class="states">
+      <li class="s-ok"><h3 data-en="Suitable">적합</h3><p data-en="The evidence needed is available and the product is assessed as meeting the criteria. This does not mean certified.">확인에 필요한 근거가 갖춰져 있고, 기준에 맞는 것으로 평가된 경우입니다. 인증을 뜻하지 않습니다.</p></li>
+      <li class="s-no"><h3 data-en="Not suitable">부적합</h3><p data-en="There is evidence that the product does not meet the criteria.">기준에 맞지 않는다는 근거가 확인된 경우입니다.</p></li>
+      <li class="s-check"><h3 data-en="Needs review">확인 필요</h3><p data-en="Something needs a closer look, such as where an ingredient comes from.">원재료의 출처처럼 더 살펴봐야 할 내용이 있는 경우입니다.</p></li>
+      <li class="s-unknown"><h3 data-en="Unknown">알 수 없음</h3><p data-en="There is not enough information to assess it. It does not mean suitable.">판단할 정보가 부족한 경우입니다. 적합하다는 뜻이 아닙니다.</p></li>
+    </ul>
+    <p class="distinct" data-en="<strong>An ingredient assessment is not official certification.</strong> TabeWise results are not Halal certification or a religious ruling. Our principle is to show official Halal certification information separately from assessment results, and only with reliable evidence."><strong>원재료 평가와 공식 인증은 다릅니다.</strong> TabeWise의 확인 결과는 할랄 인증이나 종교적 판단이 아닙니다. 공식 할랄 인증 정보는 확인 결과와 구분해, 신뢰할 수 있는 근거가 있을 때만 표시하는 것이 원칙입니다.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <header class="shead"><p class="eyebrow" data-en="How it works · Planned">이용 방법 · 예정</p><h2 data-en="How it is planned to work">이렇게 사용하도록 계획하고 있습니다</h2></header>
+    <ol class="steps">
+      <li><span class="num" aria-hidden="true">1</span><span class="badge" data-en="Planned">예정</span><h3 data-en="Scan">스캔</h3><p data-en="You would photograph the ingredient label on Korean food or scan its barcode.">한국 식품의 원재료 표시를 촬영하거나 바코드를 스캔하는 방식을 계획하고 있습니다.</p></li>
+      <li><span class="num" aria-hidden="true">2</span><span class="badge" data-en="Planned">예정</span><h3 data-en="Review">이유 확인</h3><p data-en="You would be able to look at flagged ingredients and the reasons.">확인이 필요한 원재료와 그 근거를 살펴볼 수 있도록 준비합니다.</p></li>
+      <li><span class="num" aria-hidden="true">3</span><span class="badge" data-en="Planned">예정</span><h3 data-en="Decide">직접 판단</h3><p data-en="You would use the result as a reference and decide yourself. For certainty, check the package and ask the maker or a qualified adviser.">결과는 참고만 하고 직접 판단하는 흐름을 계획합니다. 확실한 정보가 필요하면 포장을 확인하고 제조사나 전문가에게 문의하세요.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="preview">
+  <div class="wrap">
+    <header class="shead"><p class="eyebrow" data-en="App screens">앱 화면</p><h2 data-en="Korean and English app screens are in preparation">한국어·영어 앱 화면을 준비하고 있습니다</h2><p class="sub" data-en="Real app screens will appear here when they are ready. No release date is set.">실제 앱 화면이 준비되면 이곳에서 공개합니다. 출시 일정은 아직 정해지지 않았습니다.</p></header>
+    <div class="shots">
+      <figure class="shot" data-shot="home" data-image-ko="" data-image-en="">
+  <div class="phone"><div class="screen">
+    <div class="slot"><strong data-en="App Preview in Preparation">앱 화면 준비 중</strong></div>
+    <img class="shot-img" hidden width="1080" height="2400" alt="" data-alt-ko="홈 화면" data-alt-en="Home screen">
+  </div></div>
+  <figcaption data-en="Home">홈</figcaption>
+</figure>
+      <figure class="shot" data-shot="result" data-image-ko="" data-image-en="">
+  <div class="phone"><div class="screen">
+    <div class="slot"><strong data-en="App Preview in Preparation">앱 화면 준비 중</strong></div>
+    <img class="shot-img" hidden width="1080" height="2400" alt="" data-alt-ko="확인 결과 화면" data-alt-en="Result screen">
+  </div></div>
+  <figcaption data-en="Result">확인 결과</figcaption>
+</figure>
+      <figure class="shot" data-shot="share" data-image-ko="" data-image-en="">
+  <div class="phone"><div class="screen">
+    <div class="slot"><strong data-en="App Preview in Preparation">앱 화면 준비 중</strong></div>
+    <img class="shot-img" hidden width="1080" height="2400" alt="" data-alt-ko="결과 공유 화면" data-alt-en="Share screen">
+  </div></div>
+  <figcaption data-en="Share results">결과 공유</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section id="trust" class="deep">
+  <div class="wrap">
+    <header class="shead"><p class="eyebrow" data-en="Design principles">설계 원칙</p><h2 data-en="When we don't know, we intend to say so">모르는 것은 모른다고 알려 드리겠습니다</h2></header>
+    <ul class="principles">
+      <li><h3 data-en="Designed not to guess">추측하지 않도록 설계합니다</h3><p data-en="We plan to design the app so that missing or unreadable information is shown as Unknown, never guessed.">라벨에 없거나 읽을 수 없는 정보는 추측하지 않고 ‘알 수 없음’으로 표시하도록 설계할 예정입니다.</p></li>
+      <li><h3 data-en="Kept separate from certification">인증과 구분합니다</h3><p data-en="Results are planned as reference information, not certification. Screening rules are not final and no qualified religious adviser has approved them.">확인 결과는 인증이 아닌 참고 정보로 제공할 계획입니다. 확인 기준은 아직 확정되지 않았으며, 자격을 갖춘 종교 전문가의 승인을 받지 않았습니다.</p></li>
+      <li><h3 data-en="The package comes first">포장을 우선합니다</h3><p data-en="Because text recognition and product data can be wrong, the app is planned to remind people to check the package before important decisions.">문자 인식과 상품 데이터는 틀릴 수 있으므로, 중요한 결정 전에는 포장을 확인하도록 안내할 예정입니다.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap narrow">
+    <header class="shead"><p class="eyebrow" data-en="FAQ">FAQ</p><h2 data-en="Common questions">자주 묻는 질문</h2></header>
+    <div class="faq">
+      <details><summary data-en="Can I download it now?">지금 다운로드할 수 있나요?</summary><p data-en="No. It is not released and no release date is set.">아니요. 아직 출시되지 않았으며 출시일은 정해지지 않았습니다.</p></details>
+      <details><summary data-en="Which features are planned?">어떤 기능이 계획되어 있나요?</summary><p data-en="Barcode lookup, Korean label scanning, ingredient analysis, nutrition and allergen information, Halal, vegan and vegetarian screening, a product catalogue, scan history and saved products, and result sharing. None is available yet.">바코드 조회, 한글 원재료 표시 스캔, 원재료 분석, 영양 및 알레르기 정보, 할랄·비건·베지테리언 확인, 상품 카탈로그, 스캔 기록과 저장, 결과 공유입니다. 아직 이용할 수 없습니다.</p></details>
+      <details><summary data-en="Which products will it cover?">어떤 식품을 확인할 수 있나요?</summary><p data-en="It is being prepared for Korean food products and Korean-language ingredient labels. Coverage is not confirmed yet.">한국 식품과 한글 원재료 표시를 대상으로 준비하고 있습니다. 지원 범위는 아직 확정되지 않았습니다.</p></details>
+      <details><summary data-en="Which languages will it support?">어떤 언어를 지원하나요?</summary><p data-en="Korean and English support is planned.">한국어와 영어를 지원할 예정입니다.</p></details>
+      <details><summary data-en="Does it certify or verify Halal products?">할랄 인증을 확인해 주나요?</summary><p data-en="TabeWise is not a certification body and its results are not Halal certification. Our principle is to show official Halal certification information separately from assessment results, and only with reliable evidence. How it will be displayed is still under review.">TabeWise는 인증 기관이 아니며, 확인 결과는 할랄 인증이 아닙니다. 공식 할랄 인증 정보는 확인 결과와 구분해, 신뢰할 수 있는 근거가 있을 때만 표시하는 것이 원칙입니다. 구체적인 표시 방법은 아직 검토 중입니다.</p></details>
+      <details><summary data-en="What does “Unknown” mean?">‘알 수 없음’은 무슨 뜻인가요?</summary><p data-en="There is not enough information to assess the product. It does not mean suitable or Halal, so check the package or ask the maker.">판단할 정보가 부족하다는 뜻입니다. 적합하거나 할랄이라는 의미가 아니므로 포장을 확인하거나 제조사에 문의하세요.</p></details>
+      <details><summary data-en="What will it cost?">요금은 얼마인가요?</summary><p data-en="Pricing has not been decided.">가격은 아직 정해지지 않았습니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <div class="panel">
+
+      <h2 data-en="No release date has been set">출시 일정은 아직 정해지지 않았습니다</h2>
+      <p data-en="We will announce it on this website once it is confirmed.">일정이 확정되면 이 웹사이트에서 알려 드리겠습니다.</p>
+      <a class="btn white" href="#faq" data-en="Read the FAQ">자주 묻는 질문 보기</a>
     </div>
   </div>
 </section>
@@ -87,17 +179,16 @@
 
 <footer>
   <div class="wrap">
-    <div class="fgrid">
-      <div>
-        <a class="brand" href="#top" aria-label="TabeWise 타베와이즈"><img src="images/tabewise-logo-animated.svg" width="166" height="52" alt="타베와이즈 TabeWise"></a>
-        <p class="foot-p" data-en="Eat Smart. Know Better. A dedicated TabeWise for South Korea, in preparation.">현명하게 먹고, 더 잘 알기. 대한민국을 위한 TabeWise를 준비하고 있습니다.</p>
-      </div>
-    </div>
-    <nav class="legal-links" aria-label="법적 고지" data-aria-en="Legal"><a href="terms.html" data-href-en="terms-en.html" data-en="Terms of Use">이용약관</a></nav>
-    <div class="small"><span data-en="© TabeWise">© TabeWise</span></div>
+    <a class="brand" href="#top" aria-label="TabeWise 타베와이즈"><span class="wordmark">타베와이즈 <span lang="en">TabeWise</span></span></a>
+    <p class="tagline" data-en="Eat Smart. Know Better.">현명하게 먹고, 더 잘 알기.</p>
+    <p class="prep" data-en="A TabeWise app for South Korea is in preparation.">한국 시장을 위한 TabeWise 앱을 준비하고 있습니다.</p>
+    <nav class="legal-links" aria-label="법적 고지" data-aria-en="Legal"><a href="terms.html" data-href-en="terms-en.html" data-en="Terms of Service">이용약관</a></nav>
+    <p class="small" data-en="TabeWise is being prepared as a reference tool to help people check food. It is not intended as Halal certification or a religious ruling.">TabeWise는 식품 확인을 돕기 위한 참고 도구로 준비 중이며, 할랄 인증이나 종교적 판단을 목적으로 하지 않습니다.</p>
+    <p class="small">© TabeWise</p>
   </div>
 </footer>
 
-<script src="js/main.js?v=16"></script>
+<!-- If the script cannot load, the "nojs" styles show the menu links. -->
+<script src="js/main.js?v=21" onerror="document.documentElement.classList.add('nojs')"></script>
 </body>
 </html>
