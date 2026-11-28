@@ -25,10 +25,8 @@ section{padding:104px 0;scroll-margin-top:72px}
 /* header */
 .nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;gap:20px;height:72px}
-/* Temporary text wordmark until the Korean logo is approved. */
-.brand{display:inline-flex;text-decoration:none}
-.wordmark{font-size:1.18rem;font-weight:800;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
-.wordmark span{font-size:.78em;color:var(--rose)}
+.brand{display:inline-flex;flex:none;text-decoration:none}
+.logo{display:block;width:166px;height:auto}
 .nav nav{margin-left:auto}
 .nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
 .nav ul a{display:block;padding:8px 14px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap}
@@ -134,6 +132,11 @@ footer .prep{margin-top:6px}
 .legal-links a{display:inline-flex;align-items:center;min-width:44px;min-height:44px;font-weight:700;color:var(--ink)}
 footer .small{font-size:.86rem;margin-top:6px}
 
+/* Narrowest desktop header: keep the right-hand margin. */
+@media(min-width:961px) and (max-width:1000px){
+  .nav .logo{width:150px}
+}
+
 @media(max-width:960px){
   .menu-btn{display:block}
   .nav .wrap{gap:10px}
@@ -165,14 +168,13 @@ footer .small{font-size:.86rem;margin-top:6px}
 @media(max-width:560px){
   .bento,.states{grid-template-columns:1fr}
   .card.wide{grid-column:auto}
-  .wordmark{font-size:1.02rem}
+  .nav .logo{width:140px}
 }
 
 /* Narrow phones: make room so the menu button keeps its full width. */
 @media(max-width:360px){
-  .nav .wrap{gap:6px;padding:0 12px}
-  .wordmark{font-size:.92rem}
-  .lang button{padding:7px 9px}
+  .nav .wrap{gap:5px;padding:0 10px}
+  .lang button{padding:7px 7px}
 }
 
 /* Fallback when main.js cannot load (same as the noscript styles in index.html). */
